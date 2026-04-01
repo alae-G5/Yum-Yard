@@ -73,7 +73,7 @@
       gap: 20px;
     }
 
-    /* TOP NAV — JCOOK STYLE */
+    /* TOP NAV */
     .top-nav {
       background: linear-gradient(135deg, rgba(15, 9, 6, 0.95), rgba(24, 14, 9, 0.98));
       border-radius: 18px;
@@ -221,13 +221,13 @@
       }
     }
 
-    /* LEFT COLUMN — HERO + FILTERS + RECIPES */
     .left-column {
       display: flex;
       flex-direction: column;
       gap: 18px;
     }
 
+    /* HERO */
     .hero-card {
       background: radial-gradient(circle at top left, rgba(255, 138, 61, 0.18) 0, rgba(15, 9, 6, 0.98) 40%, #0b0503 100%);
       border-radius: 22px;
@@ -397,7 +397,7 @@
       color: var(--text-muted);
     }
 
-    /* HERO VISUAL — BOWL + INGREDIENTS */
+    /* HERO VISUAL */
     .hero-visual {
       position: relative;
       min-height: 220px;
@@ -920,7 +920,7 @@
       color: var(--text-muted);
     }
 
-    /* RIGHT COLUMN — INTERACTIVE COOKING PANEL */
+    /* RIGHT COLUMN */
     .right-column {
       display: flex;
       flex-direction: column;
@@ -1176,7 +1176,6 @@
       padding-top: 4px;
     }
 
-    /* SCROLLBAR */
     .panel-ingredients-list::-webkit-scrollbar,
     .panel-method-wrap::-webkit-scrollbar {
       width: 4px;
@@ -1195,176 +1194,74 @@
 
     /* ANIMATIONS */
     @keyframes bowlFloat {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-6px);
-      }
-      100% {
-        transform: translateY(0);
-      }
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
     }
 
     @keyframes steamRise {
-      0% {
-        opacity: 0;
-        transform: translateY(12px);
-      }
-      20% {
-        opacity: 0.9;
-      }
-      80% {
-        opacity: 0;
-        transform: translateY(-18px);
-      }
-      100% {
-        opacity: 0;
-      }
+      0% { opacity: 0; transform: translateY(12px); }
+      20% { opacity: 0.9; }
+      80% { opacity: 0; transform: translateY(-18px); }
+      100% { opacity: 0; }
     }
 
     @keyframes orbitSpin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
 
     @keyframes ingredientFloat {
-      0% {
-        opacity: 0;
-        transform: translateY(-10px) scale(0.9);
-      }
-      20% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-      80% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(10px) scale(0.9);
-      }
+      0% { opacity: 0; transform: translateY(-10px) scale(0.9); }
+      20% { opacity: 1; transform: translateY(0) scale(1); }
+      80% { opacity: 1; transform: translateY(0) scale(1); }
+      100% { opacity: 0; transform: translateY(10px) scale(0.9); }
     }
 
     @keyframes ingredientRowIn {
-      0% {
-        opacity: 0;
-        transform: translateY(6px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      0% { opacity: 0; transform: translateY(6px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
-    .ingredient-drop {
-      animation: ingredientDrop 0.4s ease-out;
-    }
-
+    .ingredient-drop { animation: ingredientDrop 0.4s ease-out; }
     @keyframes ingredientDrop {
-      0% {
-        transform: translateY(-18px) scale(0.9);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-      }
+      0% { transform: translateY(-18px) scale(0.9); opacity: 0; }
+      100% { transform: translateY(0) scale(1); opacity: 1; }
     }
 
-    .ingredient-pour {
-      animation: ingredientPour 0.45s ease-out;
-    }
-
+    .ingredient-pour { animation: ingredientPour 0.45s ease-out; }
     @keyframes ingredientPour {
-      0% {
-        transform: translateX(12px) rotate(8deg);
-        opacity: 0;
-      }
-      100% {
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-      }
+      0% { transform: translateX(12px) rotate(8deg); opacity: 0; }
+      100% { transform: translateX(0) rotate(0deg); opacity: 1; }
     }
 
-    .ingredient-sprinkle {
-      animation: ingredientSprinkle 0.45s ease-out;
-    }
-
+    .ingredient-sprinkle { animation: ingredientSprinkle 0.45s ease-out; }
     @keyframes ingredientSprinkle {
-      0% {
-        transform: translateY(-10px) scale(0.9);
-        opacity: 0;
-      }
-      50% {
-        transform: translateY(2px) scale(1.02);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-      }
+      0% { transform: translateY(-10px) scale(0.9); opacity: 0; }
+      50% { transform: translateY(2px) scale(1.02); opacity: 1; }
+      100% { transform: translateY(0) scale(1); opacity: 1; }
     }
 
-    .ingredient-slide {
-      animation: ingredientSlide 0.4s ease-out;
-    }
-
+    .ingredient-slide { animation: ingredientSlide 0.4s ease-out; }
     @keyframes ingredientSlide {
-      0% {
-        transform: translateX(-12px);
-        opacity: 0;
-      }
-      100% {
-        transform: translateX(0);
-        opacity: 1;
-      }
+      0% { transform: translateX(-12px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
     }
 
-    .ingredient-crack {
-      animation: ingredientCrack 0.45s ease-out;
-    }
-
+    .ingredient-crack { animation: ingredientCrack 0.45s ease-out; }
     @keyframes ingredientCrack {
-      0% {
-        transform: scale(0.8) rotate(-8deg);
-        opacity: 0;
-      }
-      50% {
-        transform: scale(1.05) rotate(4deg);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(1) rotate(0deg);
-        opacity: 1;
-      }
+      0% { transform: scale(0.8) rotate(-8deg); opacity: 0; }
+      50% { transform: scale(1.05) rotate(4deg); opacity: 1; }
+      100% { transform: scale(1) rotate(0deg); opacity: 1; }
     }
 
-    .shake-bowl {
-      animation: bowlShake 0.35s ease-in-out;
-    }
-
+    .shake-bowl { animation: bowlShake 0.35s ease-in-out; }
     @keyframes bowlShake {
-      0% {
-        transform: translateX(0);
-      }
-      25% {
-        transform: translateX(-4px);
-      }
-      50% {
-        transform: translateX(4px);
-      }
-      75% {
-        transform: translateX(-2px);
-      }
-      100% {
-        transform: translateX(0);
-      }
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-4px); }
+      50% { transform: translateX(4px); }
+      75% { transform: translateX(-2px); }
+      100% { transform: translateX(0); }
     }
   </style>
 </head>
@@ -1390,7 +1287,7 @@
           <div class="dark-toggle-pill" id="darkModeIcon">☾</div>
           <span id="darkModeLabel">Dark mode</span>
         </button>
-        <button class="login-btn">Login</button>
+        <button class="login-btn" id="loginBtn">Login</button>
       </div>
     </header>
 
@@ -1435,7 +1332,7 @@
             <div class="hero-actions">
               <button class="hero-primary-btn" id="heroStartBtn">
                 Start cooking
-                <span>→</span>
+                <span>↓</span>
               </button>
               <button class="hero-secondary-btn" id="heroRandomBtn">
                 Surprise me with a dish
@@ -1552,9 +1449,7 @@
               <span id="recipesCount">0 recipes</span>
             </div>
           </div>
-          <div id="recipesGrid" class="recipes-grid">
-            <!-- Cards injected by JS -->
-          </div>
+          <div id="recipesGrid" class="recipes-grid"></div>
           <div id="recipesEmpty" class="recipes-empty" style="display: none;">
             No recipes match your filters yet. Try another country or category.
           </div>
@@ -1572,12 +1467,8 @@
               </div>
             </div>
             <div class="panel-controls">
-              <button class="panel-btn" id="resetCookingBtn">
-                Reset
-              </button>
-              <button class="panel-btn primary" id="nextIngredientBtn">
-                Next ingredient →
-              </button>
+              <button class="panel-btn" id="resetCookingBtn">Reset</button>
+              <button class="panel-btn primary" id="nextIngredientBtn">Next ingredient →</button>
             </div>
           </div>
 
@@ -1608,9 +1499,7 @@
                 <span>Ingredients</span>
                 <span id="panelIngredientsCount">0 items</span>
               </div>
-              <div class="panel-ingredients-list" id="panelIngredientsList">
-                <!-- Ingredient rows injected by JS -->
-              </div>
+              <div class="panel-ingredients-list" id="panelIngredientsList"></div>
             </div>
 
             <div class="panel-method-wrap">
@@ -1630,7 +1519,7 @@
   </div>
 
   <script>
-    // DARK MODE TOGGLE
+    // DARK MODE
     const bodyEl = document.body;
     const darkToggle = document.getElementById("darkModeToggle");
     const darkIcon = document.getElementById("darkModeIcon");
@@ -1638,22 +1527,16 @@
 
     function applyStoredTheme() {
       const stored = localStorage.getItem("toraya-theme");
-      if (stored === "dark") {
-        bodyEl.classList.add("dark-mode");
-        darkIcon.textContent = "☾";
-        darkLabel.textContent = "Dark mode";
-      } else if (stored === "light") {
+      if (stored === "light") {
         bodyEl.classList.remove("dark-mode");
         darkIcon.textContent = "☀";
         darkLabel.textContent = "Light mode";
       } else {
-        // default: dark
         bodyEl.classList.add("dark-mode");
         darkIcon.textContent = "☾";
         darkLabel.textContent = "Dark mode";
       }
     }
-
     applyStoredTheme();
 
     darkToggle.addEventListener("click", () => {
@@ -1669,7 +1552,12 @@
       }
     });
 
-    // HERO BUTTONS
+    // LOGIN DEMO
+    document.getElementById("loginBtn").addEventListener("click", () => {
+      alert("Login button clicked — you can connect this to a real auth flow later.");
+    });
+
+    // ELEMENTS
     const heroStartBtn = document.getElementById("heroStartBtn");
     const heroRandomBtn = document.getElementById("heroRandomBtn");
     const countrySelect = document.getElementById("countrySelect");
@@ -1680,7 +1568,6 @@
     const recipesEmpty = document.getElementById("recipesEmpty");
     const heroBowl = document.getElementById("heroBowl");
 
-    // PANEL ELEMENTS
     const panelRecipeName = document.getElementById("panelRecipeName");
     const panelRecipeEmoji = document.getElementById("panelRecipeEmoji");
     const panelRecipeMeta = document.getElementById("panelRecipeMeta");
@@ -1693,10 +1580,11 @@
     const resetCookingBtn = document.getElementById("resetCookingBtn");
     const nextIngredientBtn = document.getElementById("nextIngredientBtn");
 
-    // DATA — NATIONAL DISHES + WORLD
+    // DATA
     const recipesData = [
-      /* ===================== MOROCCO — NATIONAL & CLASSICS ===================== */
+      // MOROCCO
       {
+        id: "couscous",
         name: "Moroccan Couscous with Seven Vegetables",
         emoji: "🥘",
         country: "morocco",
@@ -1704,10 +1592,8 @@
         isNational: true,
         meal: "dinner",
         time: "1h 20m",
-        oven: "Steam · Medium",
         difficulty: "Intermediate",
-        imageUrl:
-          "https://images.pexels.com/photos/3731474/pexels-photo-3731474.jpeg",
+        imageUrl: "https://images.pexels.com/photos/3731474/pexels-photo-3731474.jpeg",
         method:
           "Steam fine couscous over a fragrant broth of vegetables and spices, then serve piled high with tender carrots, zucchini, pumpkin, and chickpeas. Finish with a ladle of hot broth and a drizzle of olive oil.",
         ingredients: [
@@ -1723,6 +1609,7 @@
         ]
       },
       {
+        id: "tagine",
         name: "Chicken Tagine with Preserved Lemons & Olives",
         emoji: "🍋",
         country: "morocco",
@@ -1730,10 +1617,8 @@
         isNational: true,
         meal: "dinner",
         time: "1h 30m",
-        oven: "Tagine · Low heat",
         difficulty: "Intermediate",
-        imageUrl:
-          "https://images.pexels.com/photos/3731473/pexels-photo-3731473.jpeg",
+        imageUrl: "https://images.pexels.com/photos/3731473/pexels-photo-3731473.jpeg",
         method:
           "Slowly braise chicken pieces with onions, preserved lemons, green olives, and warm spices until the meat is tender and the sauce is rich and glossy.",
         ingredients: [
@@ -1747,6 +1632,7 @@
         ]
       },
       {
+        id: "harira",
         name: "Harira — Moroccan Tomato & Lentil Soup",
         emoji: "🍲",
         country: "morocco",
@@ -1754,10 +1640,8 @@
         isNational: false,
         meal: "dinner",
         time: "1h",
-        oven: "Simmer · Medium-low",
         difficulty: "Intermediate",
-        imageUrl:
-          "https://images.pexels.com/photos/3731476/pexels-photo-3731476.jpeg",
+        imageUrl: "https://images.pexels.com/photos/3731476/pexels-photo-3731476.jpeg",
         method:
           "Simmer tomatoes, lentils, chickpeas, and herbs into a comforting soup often served to break the fast during Ramadan.",
         ingredients: [
@@ -1771,57 +1655,7 @@
         ]
       },
       {
-        name: "Rfissa with Lentils & Chicken",
-        emoji: "🍛",
-        country: "morocco",
-        countryName: "Morocco",
-        isNational: false,
-        meal: "dinner",
-        time: "2h",
-        oven: "Simmer · Low heat",
-        difficulty: "Advanced",
-        imageUrl:
-          "https://images.pexels.com/photos/3731475/pexels-photo-3731475.jpeg",
-        method:
-          "Simmer chicken with lentils and fenugreek in a spiced broth, then serve over shredded msemen or trid.",
-        ingredients: [
-          { icon: "🍗", name: "Whole chicken, cut", amount: "1 medium", animation: "drop" },
-          { icon: "🥣", name: "Green lentils", amount: "1 cup", animation: "pour" },
-          { icon: "🥣", name: "Fenugreek seeds", amount: "2 tbsp, soaked", animation: "sprinkle" },
-          { icon: "🧅", name: "Onions, sliced", amount: "3 large", animation: "slide" },
-          { icon: "🧂", name: "Ras el hanout", amount: "2 tsp", animation: "sprinkle" },
-          { icon: "🧂", name: "Turmeric", amount: "1 tsp", animation: "sprinkle" },
-          { icon: "💧", name: "Olive oil", amount: "4 tbsp", animation: "pour" },
-          { icon: "🥞", name: "Msemen or trid", amount: "8–10 pieces, shredded", animation: "slide" },
-          { icon: "💧", name: "Water or stock", amount: "6 cups", animation: "pour" }
-        ]
-      },
-      {
-        name: "Zaalouk — Smoky Eggplant & Tomato Dip",
-        emoji: "🍆",
-        country: "morocco",
-        countryName: "Morocco",
-        isNational: false,
-        meal: "snack",
-        time: "35m",
-        oven: "Stovetop · Medium",
-        difficulty: "Easy",
-        imageUrl:
-          "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg",
-        method:
-          "Roast or sauté eggplant with tomatoes, garlic, and spices until soft, then mash into a smoky dip.",
-        ingredients: [
-          { icon: "🍆", name: "Eggplants", amount: "2 medium, diced", animation: "drop" },
-          { icon: "🍅", name: "Tomatoes", amount: "3, chopped", animation: "pour" },
-          { icon: "🧄", name: "Garlic cloves", amount: "3, minced", animation: "sprinkle" },
-          { icon: "🧂", name: "Paprika", amount: "1 tsp", animation: "sprinkle" },
-          { icon: "🧂", name: "Cumin", amount: "1 tsp", animation: "sprinkle" },
-          { icon: "💧", name: "Olive oil", amount: "3 tbsp", animation: "pour" },
-          { icon: "🌿", name: "Fresh cilantro", amount: "2 tbsp, chopped", animation: "sprinkle" },
-          { icon: "🧂", name: "Salt & pepper", amount: "To taste", animation: "sprinkle" }
-        ]
-      },
-      {
+        id: "baghrir",
         name: "Baghrir — Moroccan Thousand-Hole Pancakes",
         emoji: "🥞",
         country: "morocco",
@@ -1829,10 +1663,8 @@
         isNational: false,
         meal: "breakfast",
         time: "30m",
-        oven: "Pan · Medium-low",
         difficulty: "Easy",
-        imageUrl:
-          "https://images.pexels.com/photos/1437268/pexels-photo-1437268.jpeg",
+        imageUrl: "https://images.pexels.com/photos/1437268/pexels-photo-1437268.jpeg",
         method:
           "Blend semolina batter, let it rest, then cook on one side only until thousands of tiny holes appear.",
         ingredients: [
@@ -1846,60 +1678,10 @@
           { icon: "🍯", name: "Honey & butter", amount: "For serving", animation: "pour" }
         ]
       },
-      {
-        name: "Pastilla with Chicken & Almonds",
-        emoji: "🥧",
-        country: "morocco",
-        countryName: "Morocco",
-        isNational: false,
-        meal: "dinner",
-        time: "2h 15m",
-        oven: "Bake · 180°C",
-        difficulty: "Advanced",
-        imageUrl:
-          "https://images.pexels.com/photos/3731472/pexels-photo-3731472.jpeg",
-        method:
-          "Layer spiced chicken, sweet almonds, and eggs in pastry, then bake until crisp and dust with sugar and cinnamon.",
-        ingredients: [
-          { icon: "🍗", name: "Chicken, shredded", amount: "3 cups", animation: "drop" },
-          { icon: "🥚", name: "Eggs", amount: "4, lightly scrambled", animation: "crack" },
-          { icon: "🥜", name: "Almonds, fried & ground", amount: "2 cups", animation: "pour" },
-          { icon: "🧂", name: "Cinnamon", amount: "2 tsp", animation: "sprinkle" },
-          { icon: "🧂", name: "Sugar", amount: "½ cup", animation: "sprinkle" },
-          { icon: "🥠", name: "Warka or filo sheets", amount: "10–12 sheets", animation: "slide" },
-          { icon: "🧈", name: "Melted butter", amount: "½ cup", animation: "pour" },
-          { icon: "🧂", name: "Powdered sugar", amount: "For dusting", animation: "sprinkle" }
-        ]
-      },
-      {
-        name: "Moroccan Fish Chermoula Tray Bake",
-        emoji: "🐟",
-        country: "morocco",
-        countryName: "Morocco",
-        isNational: false,
-        meal: "dinner",
-        time: "50m",
-        oven: "Bake · 190°C",
-        difficulty: "Intermediate",
-        imageUrl:
-          "https://images.pexels.com/photos/3296273/pexels-photo-3296273.jpeg",
-        method:
-          "Marinate fish in chermoula, then bake over a bed of potatoes, peppers, and tomatoes until flaky and fragrant.",
-        ingredients: [
-          { icon: "🐟", name: "White fish fillets", amount: "4 pieces", animation: "drop" },
-          { icon: "🥔", name: "Potatoes", amount: "3, sliced", animation: "slide" },
-          { icon: "🫑", name: "Bell peppers", amount: "2, sliced", animation: "slide" },
-          { icon: "🍅", name: "Tomatoes", amount: "2, sliced", animation: "pour" },
-          { icon: "🌿", name: "Cilantro & parsley", amount: "½ cup, chopped", animation: "sprinkle" },
-          { icon: "🧄", name: "Garlic cloves", amount: "4, minced", animation: "sprinkle" },
-          { icon: "🧂", name: "Paprika & cumin", amount: "1 tsp each", animation: "sprinkle" },
-          { icon: "🍋", name: "Lemon juice", amount: "2 tbsp", animation: "pour" },
-          { icon: "💧", name: "Olive oil", amount: "4 tbsp", animation: "pour" }
-        ]
-      },
 
-      /* ===================== JAPAN ===================== */
+      // JAPAN
       {
+        id: "ramen",
         name: "Japanese Ramen with Soft-Boiled Egg",
         emoji: "🍜",
         country: "japan",
@@ -1907,10 +1689,8 @@
         isNational: true,
         meal: "dinner",
         time: "1h 30m",
-        oven: "Simmer · Medium-low",
         difficulty: "Intermediate",
-        imageUrl:
-          "https://images.pexels.com/photos/3298180/pexels-photo-3298180.jpeg",
+        imageUrl: "https://images.pexels.com/photos/3298180/pexels-photo-3298180.jpeg",
         method:
           "Simmer a rich broth, cook noodles, and top with marinated egg, sliced pork, and vegetables.",
         ingredients: [
@@ -1926,6 +1706,7 @@
         ]
       },
       {
+        id: "sushi",
         name: "Sushi Rolls with Salmon & Avocado",
         emoji: "🍣",
         country: "japan",
@@ -1933,10 +1714,8 @@
         isNational: false,
         meal: "lunch",
         time: "50m",
-        oven: "No cook · Roll",
         difficulty: "Intermediate",
-        imageUrl:
-          "https://images.pexels.com/photos/3296272/pexels-photo-3296272.jpeg",
+        imageUrl: "https://images.pexels.com/photos/3296272/pexels-photo-3296272.jpeg",
         method:
           "Spread seasoned rice on nori, add salmon and avocado, then roll tightly and slice into bite-sized pieces.",
         ingredients: [
@@ -1951,8 +1730,9 @@
         ]
       },
 
-      /* ===================== ITALY ===================== */
+      // ITALY
       {
+        id: "margherita",
         name: "Classic Margherita Pizza",
         emoji: "🍕",
         country: "italy",
@@ -1960,10 +1740,8 @@
         isNational: true,
         meal: "dinner",
         time: "1h 15m",
-        oven: "Bake · 250°C",
         difficulty: "Intermediate",
-        imageUrl:
-          "https://images.pexels.com/photos/4109084/pexels-photo-4109084.jpeg",
+        imageUrl: "https://images.pexels.com/photos/4109084/pexels-photo-4109084.jpeg",
         method:
           "Stretch pizza dough, top with tomato sauce, mozzarella, and basil, then bake in a very hot oven.",
         ingredients: [
@@ -1976,6 +1754,7 @@
         ]
       },
       {
+        id: "alfredo",
         name: "Creamy Fettuccine Alfredo",
         emoji: "🍝",
         country: "italy",
@@ -1983,10 +1762,8 @@
         isNational: false,
         meal: "dinner",
         time: "30m",
-        oven: "Stovetop · Medium",
         difficulty: "Easy",
-        imageUrl:
-          "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg",
+        imageUrl: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg",
         method:
           "Cook fettuccine, then toss with butter, cream, and Parmesan until silky and coated.",
         ingredients: [
@@ -1999,8 +1776,9 @@
         ]
       },
 
-      /* ===================== MEXICO ===================== */
+      // MEXICO
       {
+        id: "pastor",
         name: "Tacos al Pastor",
         emoji: "🌮",
         country: "mexico",
@@ -2008,10 +1786,8 @@
         isNational: true,
         meal: "dinner",
         time: "1h 40m",
-        oven: "Grill · Medium-high",
         difficulty: "Intermediate",
-        imageUrl:
-          "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
+        imageUrl: "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
         method:
           "Marinate pork in achiote and pineapple, grill until charred, then serve in tortillas with onion and cilantro.",
         ingredients: [
@@ -2025,6 +1801,7 @@
         ]
       },
       {
+        id: "guacamole",
         name: "Guacamole with Lime & Cilantro",
         emoji: "🥑",
         country: "mexico",
@@ -2032,10 +1809,8 @@
         isNational: false,
         meal: "snack",
         time: "15m",
-        oven: "No cook",
         difficulty: "Easy",
-        imageUrl:
-          "https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg",
+        imageUrl: "https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg",
         method:
           "Mash ripe avocados with lime, onion, tomato, and cilantro for a fresh, creamy dip.",
         ingredients: [
@@ -2048,8 +1823,9 @@
         ]
       },
 
-      /* ===================== INDIA ===================== */
+      // INDIA
       {
+        id: "butter-chicken",
         name: "Butter Chicken (Murgh Makhani)",
         emoji: "🍛",
         country: "india",
@@ -2057,10 +1833,8 @@
         isNational: true,
         meal: "dinner",
         time: "1h",
-        oven: "Simmer · Medium",
         difficulty: "Intermediate",
-        imageUrl:
-          "https://images.pexels.com/photos/1117862/pexels-photo-1117862.jpeg",
+        imageUrl: "https://images.pexels.com/photos/1117862/pexels-photo-1117862.jpeg",
         method:
           "Marinate chicken in yogurt and spices, grill or sear, then simmer in a buttery tomato cream sauce.",
         ingredients: [
@@ -2074,6 +1848,7 @@
         ]
       },
       {
+        id: "chai",
         name: "Masala Chai — Spiced Milk Tea",
         emoji: "☕",
         country: "india",
@@ -2081,10 +1856,8 @@
         isNational: false,
         meal: "breakfast",
         time: "20m",
-        oven: "Stovetop · Low",
         difficulty: "Easy",
-        imageUrl:
-          "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg",
+        imageUrl: "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg",
         method:
           "Simmer black tea with milk, sugar, and whole spices like cardamom, cinnamon, and ginger.",
         ingredients: [
@@ -2098,259 +1871,207 @@
         ]
       }
     ];
-<script>
-/* ============================================================
-   PART 2 / 2 — FULL LOGIC
-   ============================================================ */
 
-let selectedCategory = "all";
-let selectedCountry = "all";
-let currentRecipe = null;
-let currentIngredientIndex = 0;
+    let selectedCategory = "all";
+    let selectedCountry = "all";
+    let currentRecipe = null;
+    let currentIngredientIndex = 0;
 
-/* ------------------------------------------------------------
-   FILTERING + RENDERING
------------------------------------------------------------- */
+    function updateFilterSummary() {
+      const countryText =
+        selectedCountry === "all"
+          ? "all countries"
+          : recipesData.find((r) => r.country === selectedCountry)?.countryName || "selected country";
 
-function filterRecipes() {
-  const filtered = recipesData.filter((r) => {
-    const matchCountry = selectedCountry === "all" || r.country === selectedCountry;
-    const matchCategory = selectedCategory === "all" || r.meal === selectedCategory;
-    return matchCountry && matchCategory;
-  });
+      const categoryText = selectedCategory === "all" ? "all categories" : selectedCategory;
+      filterSummary.textContent = `Showing ${categoryText} from ${countryText}.`;
+    }
 
-  renderRecipes(filtered);
-}
+    function filterRecipes() {
+      const filtered = recipesData.filter((r) => {
+        const matchCountry = selectedCountry === "all" || r.country === selectedCountry;
+        const matchCategory = selectedCategory === "all" || r.meal === selectedCategory;
+        return matchCountry && matchCategory;
+      });
+      renderRecipes(filtered);
+    }
 
-function renderRecipes(list) {
-  recipesGrid.innerHTML = "";
-  recipesCount.textContent = `${list.length} recipes`;
+    function renderRecipes(list) {
+      recipesGrid.innerHTML = "";
+      recipesCount.textContent = `${list.length} recipes`;
 
-  if (list.length === 0) {
-    recipesEmpty.style.display = "block";
-    return;
-  }
+      if (list.length === 0) {
+        recipesEmpty.style.display = "block";
+        return;
+      }
+      recipesEmpty.style.display = "none";
 
-  recipesEmpty.style.display = "none";
+      list.forEach((recipe) => {
+        const card = document.createElement("div");
+        card.className = "recipe-card";
+        card.dataset.id = recipe.id;
 
-  list.forEach((recipe, index) => {
-    const card = document.createElement("div");
-    card.className = "recipe-card";
-    card.dataset.index = index;
+        card.innerHTML = `
+          <div class="recipe-image-wrap">
+            <img src="${recipe.imageUrl}" class="recipe-image" />
+            <div class="recipe-image-gradient"></div>
+            <div class="recipe-country-pill">
+              <span class="recipe-country-flag">${recipe.emoji}</span>
+              <span>${recipe.countryName}</span>
+            </div>
+            ${recipe.isNational ? `<div class="recipe-national-tag">NATIONAL DISH</div>` : ""}
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-name-row">
+              <div class="recipe-name">${recipe.name}</div>
+              <div class="recipe-emoji">${recipe.emoji}</div>
+            </div>
+            <div class="recipe-meta-row">
+              <div class="recipe-meta-pill">${recipe.time}</div>
+              <div class="recipe-meta-pill">${recipe.difficulty}</div>
+              <div class="recipe-meta-pill">${recipe.meal}</div>
+            </div>
+            <div class="recipe-footer-row">
+              <div class="recipe-footer-left">${recipe.ingredients.length} ingredients</div>
+              <div class="recipe-footer-right">Cook <span>→</span></div>
+            </div>
+          </div>
+        `;
 
-    card.innerHTML = `
-      <div class="recipe-image-wrap">
-        <img src="${recipe.imageUrl}" class="recipe-image" />
-        <div class="recipe-image-gradient"></div>
-        <div class="recipe-country-pill">
-          <span class="recipe-country-flag">${recipe.emoji}</span>
-          <span>${recipe.countryName}</span>
-        </div>
-        ${recipe.isNational ? `<div class="recipe-national-tag">NATIONAL DISH</div>` : ""}
-      </div>
+        card.addEventListener("click", () => selectRecipe(recipe.id));
+        recipesGrid.appendChild(card);
+      });
+    }
 
-      <div class="recipe-body">
-        <div class="recipe-name-row">
-          <div class="recipe-name">${recipe.name}</div>
-          <div class="recipe-emoji">${recipe.emoji}</div>
-        </div>
+    function selectRecipe(recipeId) {
+      const recipe = recipesData.find((r) => r.id === recipeId);
+      if (!recipe) return;
 
-        <div class="recipe-meta-row">
-          <div class="recipe-meta-pill">${recipe.time}</div>
-          <div class="recipe-meta-pill">${recipe.difficulty}</div>
-          <div class="recipe-meta-pill">${recipe.meal}</div>
-        </div>
+      currentRecipe = recipe;
+      currentIngredientIndex = 0;
 
-        <div class="recipe-footer-row">
-          <div class="recipe-footer-left">${recipe.ingredients.length} ingredients</div>
-          <div class="recipe-footer-right">Cook <span>→</span></div>
-        </div>
-      </div>
-    `;
+      document.querySelectorAll(".recipe-card").forEach((c) => c.classList.remove("selected"));
+      const selectedCard = document.querySelector(`.recipe-card[data-id="${recipeId}"]`);
+      if (selectedCard) selectedCard.classList.add("selected");
 
-    card.addEventListener("click", () => selectRecipe(recipe, card));
-    recipesGrid.appendChild(card);
-  });
-}
+      panelRecipeName.textContent = recipe.name;
+      panelRecipeEmoji.textContent = recipe.emoji;
+      panelRecipeMeta.innerHTML = `
+        <div class="panel-selected-meta-pill">${recipe.time}</div>
+        <div class="panel-selected-meta-pill">${recipe.difficulty}</div>
+        <div class="panel-selected-meta-pill">${recipe.meal}</div>
+      `;
+      panelMethodText.textContent = recipe.method;
 
-/* ------------------------------------------------------------
-   SELECT RECIPE
------------------------------------------------------------- */
+      panelIngredientsList.innerHTML = "";
+      recipe.ingredients.forEach((ing) => {
+        const row = document.createElement("div");
+        row.className = "panel-ingredient-row";
+        row.innerHTML = `
+          <div class="panel-ingredient-left">
+            <div class="panel-ingredient-emoji">${ing.icon}</div>
+            <div class="panel-ingredient-name">${ing.name}</div>
+          </div>
+          <div class="panel-ingredient-amount">${ing.amount}</div>
+        `;
+        panelIngredientsList.appendChild(row);
+      });
 
-function selectRecipe(recipe, card) {
-  currentRecipe = recipe;
-  currentIngredientIndex = 0;
+      panelIngredientsCount.textContent = `${recipe.ingredients.length} items`;
+      panelProgressBar.style.width = "0%";
+      panelProgressCount.textContent = `0 / ${recipe.ingredients.length} ingredients`;
+      panelEmptyHint.textContent = "Click “Next ingredient →” to start cooking!";
+    }
 
-  document.querySelectorAll(".recipe-card").forEach((c) => c.classList.remove("selected"));
-  card.classList.add("selected");
+    nextIngredientBtn.addEventListener("click", () => {
+      if (!currentRecipe) return;
 
-  panelRecipeName.textContent = recipe.name;
-  panelRecipeEmoji.textContent = recipe.emoji;
+      const ingredients = currentRecipe.ingredients;
+      if (currentIngredientIndex >= ingredients.length) return;
 
-  panelRecipeMeta.innerHTML = `
-    <div class="panel-selected-meta-pill">${recipe.time}</div>
-    <div class="panel-selected-meta-pill">${recipe.difficulty}</div>
-    <div class="panel-selected-meta-pill">${recipe.meal}</div>
-  `;
+      const ing = ingredients[currentIngredientIndex];
+      const rows = panelIngredientsList.querySelectorAll(".panel-ingredient-row");
+      const row = rows[currentIngredientIndex];
+      if (!row) return;
 
-  panelMethodText.textContent = recipe.method;
+      row.classList.add("visible");
 
-  panelIngredientsList.innerHTML = "";
-  recipe.ingredients.forEach((ing) => {
-    const row = document.createElement("div");
-    row.className = "panel-ingredient-row";
-    row.innerHTML = `
-      <div class="panel-ingredient-left">
-        <div class="panel-ingredient-emoji">${ing.icon}</div>
-        <div class="panel-ingredient-name">${ing.name}</div>
-      </div>
-      <div class="panel-ingredient-amount">${ing.amount}</div>
-    `;
-    panelIngredientsList.appendChild(row);
-  });
+      heroBowl.classList.add("shake-bowl");
+      setTimeout(() => heroBowl.classList.remove("shake-bowl"), 350);
 
-  panelIngredientsCount.textContent = `${recipe.ingredients.length} items`;
-  panelProgressBar.style.width = "0%";
-  panelProgressCount.textContent = `0 / ${recipe.ingredients.length} ingredients`;
+      const animClass =
+        ing.animation === "drop"
+          ? "ingredient-drop"
+          : ing.animation === "pour"
+          ? "ingredient-pour"
+          : ing.animation === "sprinkle"
+          ? "ingredient-sprinkle"
+          : ing.animation === "slide"
+          ? "ingredient-slide"
+          : "ingredient-crack";
 
-  panelEmptyHint.textContent = "Click “Next ingredient →” to start cooking!";
-}
+      row.classList.add(animClass);
 
-/* ------------------------------------------------------------
-   NEXT INGREDIENT BUTTON
------------------------------------------------------------- */
+      currentIngredientIndex++;
+      const progress = (currentIngredientIndex / ingredients.length) * 100;
+      panelProgressBar.style.width = `${progress}%`;
+      panelProgressCount.textContent = `${currentIngredientIndex} / ${ingredients.length} ingredients`;
 
-nextIngredientBtn.addEventListener("click", () => {
-  if (!currentRecipe) return;
+      if (currentIngredientIndex === ingredients.length) {
+        panelEmptyHint.textContent = "All ingredients added! Follow the method to finish the dish.";
+      }
+    });
 
-  const ingredients = currentRecipe.ingredients;
+    resetCookingBtn.addEventListener("click", () => {
+      if (!currentRecipe) return;
+      currentIngredientIndex = 0;
+      panelIngredientsList.querySelectorAll(".panel-ingredient-row").forEach((row) => {
+        row.classList.remove("visible", "ingredient-drop", "ingredient-pour", "ingredient-sprinkle", "ingredient-slide", "ingredient-crack");
+      });
+      panelProgressBar.style.width = "0%";
+      panelProgressCount.textContent = `0 / ${currentRecipe.ingredients.length} ingredients`;
+      panelEmptyHint.textContent = "Click “Next ingredient →” to start again.";
+    });
 
-  if (currentIngredientIndex >= ingredients.length) return;
+    categoryRow.querySelectorAll(".category-pill").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        categoryRow.querySelectorAll(".category-pill").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        selectedCategory = btn.dataset.category;
+        updateFilterSummary();
+        filterRecipes();
+      });
+    });
 
-  const ing = ingredients[currentIngredientIndex];
+    countrySelect.addEventListener("change", () => {
+      selectedCountry = countrySelect.value;
+      updateFilterSummary();
+      filterRecipes();
+    });
 
-  const rows = panelIngredientsList.querySelectorAll(".panel-ingredient-row");
-  const row = rows[currentIngredientIndex];
-  row.classList.add("visible");
+    heroStartBtn.addEventListener("click", () => {
+      const top = recipesGrid.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top, behavior: "smooth" });
+    });
 
-  heroBowl.classList.add("shake-bowl");
-  setTimeout(() => heroBowl.classList.remove("shake-bowl"), 350);
+    heroRandomBtn.addEventListener("click", () => {
+      const filtered = recipesData.filter((r) => {
+        const matchCountry = selectedCountry === "all" || r.country === selectedCountry;
+        const matchCategory = selectedCategory === "all" || r.meal === selectedCategory;
+        return matchCountry && matchCategory;
+      });
+      if (filtered.length === 0) return;
+      const random = filtered[Math.floor(Math.random() * filtered.length)];
+      selectRecipe(random.id);
+      const card = document.querySelector(`.recipe-card[data-id="${random.id}"]`);
+      if (card) {
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    });
 
-  const animClass =
-    ing.animation === "drop"
-      ? "ingredient-drop"
-      : ing.animation === "pour"
-      ? "ingredient-pour"
-      : ing.animation === "sprinkle"
-      ? "ingredient-sprinkle"
-      : ing.animation === "slide"
-      ? "ingredient-slide"
-      : "ingredient-crack";
-
-  row.classList.add(animClass);
-
-  currentIngredientIndex++;
-
-  const progress = (currentIngredientIndex / ingredients.length) * 100;
-  panelProgressBar.style.width = `${progress}%`;
-  panelProgressCount.textContent = `${currentIngredientIndex} / ${ingredients.length} ingredients`;
-
-  if (currentIngredientIndex === ingredients.length) {
-    panelEmptyHint.textContent = "All ingredients added! Follow the method to finish the dish.";
-  }
-});
-
-/* ------------------------------------------------------------
-   RESET COOKING
------------------------------------------------------------- */
-
-resetCookingBtn.addEventListener("click", () => {
-  if (!currentRecipe) return;
-
-  currentIngredientIndex = 0;
-
-  panelIngredientsList.querySelectorAll(".panel-ingredient-row").forEach((row) => {
-    row.classList.remove("visible");
-  });
-
-  panelProgressBar.style.width = "0%";
-  panelProgressCount.textContent = `0 / ${currentRecipe.ingredients.length} ingredients`;
-
-  panelEmptyHint.textContent = "Click “Next ingredient →” to start again.";
-});
-
-/* ------------------------------------------------------------
-   CATEGORY BUTTONS
------------------------------------------------------------- */
-
-categoryRow.querySelectorAll(".category-pill").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    categoryRow.querySelectorAll(".category-pill").forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
-
-    selectedCategory = btn.dataset.category;
+    // INITIAL
     updateFilterSummary();
     filterRecipes();
-  });
-});
-
-/* ------------------------------------------------------------
-   COUNTRY SELECT
------------------------------------------------------------- */
-
-countrySelect.addEventListener("change", () => {
-  selectedCountry = countrySelect.value;
-  updateFilterSummary();
-  filterRecipes();
-});
-
-/* ------------------------------------------------------------
-   FILTER SUMMARY
------------------------------------------------------------- */
-
-function updateFilterSummary() {
-  const countryText =
-    selectedCountry === "all"
-      ? "all countries"
-      : recipesData.find((r) => r.country === selectedCountry)?.countryName;
-
-  const categoryText = selectedCategory === "all" ? "all categories" : selectedCategory;
-
-  filterSummary.textContent = `Showing ${categoryText} from ${countryText}.`;
-}
-
-/* ------------------------------------------------------------
-   HERO BUTTONS
------------------------------------------------------------- */
-
-heroStartBtn.addEventListener("click", () => {
-  window.scrollTo({ top: recipesGrid.offsetTop - 80, behavior: "smooth" });
-});
-
-heroRandomBtn.addEventListener("click", () => {
-  const random = recipesData[Math.floor(Math.random() * recipesData.length)];
-
-  const cards = document.querySelectorAll(".recipe-card");
-  cards.forEach((c) => c.classList.remove("selected"));
-
-  const index = recipesData.indexOf(random);
-  const card = cards[index];
-  if (card) {
-    card.classList.add("selected");
-    card.scrollIntoView({ behavior: "smooth", block: "center" });
-  }
-
-  selectRecipe(random, card);
-});
-
-/* ------------------------------------------------------------
-   INITIAL LOAD
------------------------------------------------------------- */
-
-filterRecipes();
-updateFilterSummary();
-</script>
-
   </script>
 </body>
 </html>
